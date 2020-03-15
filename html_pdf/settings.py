@@ -38,7 +38,7 @@ SITE_ID = 1
 
 
 # DOMAIN_NAME =  "http://localhost:8000"
-DOMAIN_NAME =  "https://webpagetopdf.herokuapp.com/"
+DOMAIN_NAME =  "https://webpagetopdf.herokuapp.com"
 
 
 
