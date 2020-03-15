@@ -37,8 +37,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # new
 SITE_ID = 1 
 
 
-DOMAIN_NAME =  "http://localhost:8000"
-# DOMAIN_NAME =  "https://imagebase64.herokuapp.com"
+# DOMAIN_NAME =  "http://localhost:8000"
+DOMAIN_NAME =  "https://webpagetopdf.herokuapp.com/"
 
 
 
@@ -124,7 +124,7 @@ db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
 
-SITE_NAME  = "Html2PDF.io"
+SITE_NAME  = "WebpagetoPdf"
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
