@@ -47,6 +47,11 @@ html, body {
 	color: white;
 	background: url('../img/background.png') no-repeat center center fixed;
 	background-size: cover;
+	/*lets account for fire-fox and opera*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
     
 }
 
