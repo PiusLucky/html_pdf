@@ -612,6 +612,15 @@ wonderful thing for responsive web design. Make the SVG responsive:*/
 
 }
 
+@media screen and (max-device-width:999px){
+	.process_img{
+		width: 70%;
+		margin-top: 4%;
+		margin-left: 20%;
+
+	}
+}
+
 /*targetting landscape (rotated devices)*/
 @media screen and (max-device-width:960px) and (orientation:landscape){
 	.navigation{
@@ -621,9 +630,8 @@ wonderful thing for responsive web design. Make the SVG responsive:*/
 	img#logo{
 	   max-height: 4vh;
 	   height:4rem;
-
-
 	}
+	
 }
 
 
@@ -744,6 +752,8 @@ wonderful thing for responsive web design. Make the SVG responsive:*/
 	     line-height:40px;
 	     
 	}
+
+	
 
 }
 
