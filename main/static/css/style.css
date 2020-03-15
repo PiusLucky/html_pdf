@@ -226,8 +226,7 @@ ul:nth-of-type(3){
 	font-family:monospace; 
 	font-style:none; 
 	font-weight:bold; 
-	padding-right: 5rem;
-	padding-left: 5rem;
+	width: 100%;
 	font-size: 15px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
