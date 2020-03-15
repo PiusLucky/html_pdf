@@ -1,9 +1,3 @@
-<style type="text/css">
-.code_color{
-color: #00A1CA;
-font-weight: bold;
-}
-</style>
 <h2>https://webpagetopdf.herokuapp.com/<h2>
 <br>
 <h3>Speedy <span class="code_color">Conversion:</span></h3>
