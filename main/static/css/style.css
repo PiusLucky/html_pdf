@@ -859,9 +859,12 @@ wonderful thing for responsive web design. Make the SVG responsive:*/
 
 	.navigation{
 		height: 4rem;
-		margin-left: 1rem;
 		margin-right: 1rem;
-		text-align: center;
+		text-align: left;
+	}
+
+	ul:nth-of-type(1){
+		margin-left: -0.8rem;
 	}
 
 	#logo{
@@ -886,7 +889,7 @@ wonderful thing for responsive web design. Make the SVG responsive:*/
 	     background-color:#0090CB;
 	     display:inline-block;
 	     height:40px;
-	     width:1rem;
+	     width:1.5rem;
 	     color:#fff;
 	     font-size:10pt;
 	     text-align: center;
