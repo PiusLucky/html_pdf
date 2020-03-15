@@ -22,6 +22,7 @@ from main.models import Footer
 
 def home(request):
 	template = "index.html"
+	title = settings.SITE_NAME
 	c_obj = Footer.objects.all()
 	for only_item in c_obj:
 		start_year = only_item.start_year
@@ -31,9 +32,9 @@ def home(request):
 	# passing it into our context variable
 	form = URLForm()
 	try:
-		return render(request, template, {"start_year":start_year, "current_year":current_year})
+		return render(request, template, {"start_year":start_year, "current_year":current_year, "title":title})
 	except UnboundLocalError:
-		return render(request, template, {})
+		return render(request, template, {"title":title})
 
 def postUrlForm(request):
 	if request.method == "POST" and request.is_ajax():
