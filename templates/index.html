@@ -243,89 +243,9 @@
           <a href="javascript:;" id="scrollToTop">&#x25B2;</a>
           </div>
 	</div>
-	<script type="text/javascript">
-	 $(document).ready(function(){
-
-               $('#contact_btn, #scrollToBottom, #heart_btn').bind("click", function () {
-               $('html, body').animate({ scrollTop: $(document).height() }, 1200);
-               return false;
-               });
-               $('#scrollToTop').bind("click", function () {
-                   $('html, body').animate({ scrollTop: 0 }, 1200);
-                   return false;
-               });
-
-			$(".urlform").submit(function(e){
-			// prevent from normal form behaviour
-			e.preventDefault();
-			// serialize the form data  
-			// The serialize() method creates a URL encoded text string by serializing form values. You can select one or more form elements (like input and/or text area), or the form element itself. The serialized values can be used in the URL query string when making an AJAX request.
-			var serializedData = $(this).serialize();
-			$.ajax({
-			type : 'POST',
-			url :  "{% url 'main:url_form_submit' %}",
-			data : serializedData,
-			success : function(response){
-			//reset the form after successful submit
-			console.log(response);
-			$(".hidden_txt")[0].style["display"] = "block";
-			// $(".d_anchor")[0].style["display"] = "block";
-			$(".another")[0].style["display"] = "block";
-			$(".message").html(`${response.success_msg}`);
-			// $(".d_anchor").attr('href', `${response.download_link}`);
-			$(".line_br")[0].style["display"] = "none";
-			$(".urlform")[0].style["display"] = "none";
-               $(".process_img")[0].style["display"] = "block";
-               // This is an indication that you can write an ajax 
-               // function inside of the success function of an ajax call itself.
-               $.ajax({ 
-                   url: `${response.download_link}`,
-                   dataType: 'json',
-                   success: function (response) {
-                    $(".message").html(`${response.msg}`);
-                    $(".process_img")[0].style["display"] = "none";
-                    $(".downloader")[0].style["display"] = "block";
-                    $(".downloader").attr("href", `${response.pdf_link}`)
-                   },
-                   error: function(response){
-                    console.log(response)
-                    if (response.status == 500){
-                    $(".message").html("Network connection <em style='color:red'>failed</style></em>");
-                    $(".reason")[0].style["display"] = "block";
-                    $(".message_reason").html(`Link could not be accessed, check internet connection! <span>&nbsp; <a href="" class="link_color"> try again</a> </span>`);
-                    $(".process_img")[0].style["display"] = "none";
-                    }else{
-                    $(".reason")[0].style["display"] = "block";
-                    $(".process_img")[0].style["display"] = "none";
-                    $(".hidden_txt").html(`${response.responseJSON.status}`);
-                    $(".message_reason").html(`${response.responseJSON.msg}`);
-                     } 
-                   }
-               });    
-			try{
-				$("div.server_err")[0].style["display"] = "none";
-			}
-			catch(e){
-				console.log(e.description);
-			}
-			},
-			error : function(response){
-			console.log(response)
-			$(".hidden_txt")[0].style["display"] = "block";			
-			// When dealing with ajax, use the console 
-			// that's how i derived the logic below.
-			$(".message").html(`${response.responseJSON.msg}`);
-			try{
-				$("div.server_err")[0].style["display"] = "none";
-			}
-			catch(e){
-				console.log(e.description);
-			}}
-			});
-	      
-	   });
-	});
-	</script>
+     <script type="text/javascript">
+     $(document).ready(function(){$("#contact_btn, #scrollToBottom, #heart_btn").bind("click",function(){return $("html, body").animate({scrollTop:$(document).height()},1200),!1}),$("#scrollToTop").bind("click",function(){return $("html, body").animate({scrollTop:0},1200),!1}),$(".urlform").submit(function(e){e.preventDefault();var s=$(this).serialize();$.ajax({type:"POST",url:"{% url 'main:url_form_submit' %}",data:s,success:function(e){console.log(e),$(".hidden_txt")[0].style.display="block",$(".another")[0].style.display="block",$(".message").html(`${e.success_msg}`),$(".line_br")[0].style.display="none",$(".urlform")[0].style.display="none",$(".process_img")[0].style.display="block",$.ajax({url:`${e.download_link}`,dataType:"json",success:function(e){$(".message").html(`${e.msg}`),$(".process_img")[0].style.display="none",$(".downloader")[0].style.display="block",$(".downloader").attr("href",`${e.pdf_link}`)},error:function(e){console.log(e),500==e.status?($(".message").html("Network connection <em style='color:red'>failed</style></em>"),$(".reason")[0].style.display="block",$(".message_reason").html('Link could not be accessed, check internet connection! <span>&nbsp; <a href="" class="link_color"> try again</a> </span>'),$(".process_img")[0].style.display="none"):($(".reason")[0].style.display="block",$(".process_img")[0].style.display="none",$(".hidden_txt").html(`${e.responseJSON.status}`),$(".message_reason").html(`${e.responseJSON.msg}`))}});try{$("div.server_err")[0].style.display="none"}catch(e){console.log(e.description)}},error:function(e){console.log(e),$(".hidden_txt")[0].style.display="block",$(".message").html(`${e.responseJSON.msg}`);try{$("div.server_err")[0].style.display="none"}catch(e){console.log(e.description)}}})})});
+     </script>
 
 </body>
 </html>
