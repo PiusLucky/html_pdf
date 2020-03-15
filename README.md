@@ -1,4 +1,4 @@
-<style type="text/stylesheet">
+<style type="text/css"></style>
 .code_color{
 color: #00A1CA;
 font-weight: bold;
