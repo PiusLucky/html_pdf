@@ -1,0 +1,38 @@
+Phone R. Satisfied:
+
+1. JioPhone 2(240 x 320) - Portrait & Landscape
+2. iPhone 4 (320 x 480) - Portrait & Landscape
+3. Nokia Lumia 520 (320 x 533) - Portrait & Landscape
+4. Microsoft Lumia 950 (360 x 640) - Portrait & Landscape
+5. Galaxy Note II & 3 (360 x 640) - Portrait & Landscape
+6. Blackberry Z30 (360 x 640) - Portrait & Landscape
+7. Blackberry PlayBook (600 x 1024) -  Portrait & Landscape
+8. Tecno W3 (720 x 1500) -  Portrait & Landscape
+9. Pixel 2 & XL (411 x 731)  -  Portrait & Landscape
+10. iPhone 5/SE (568 x 320)  -  Landscape & Portrait
+11. iPhone 6/7/8 (667 x 375)  -  Landscape & Portrait
+12. iPhone 6/7/8 plus (736 x 414)  -   Landscape & Portrait
+13. iPhone X (812 x 375)  -   Landscape & Portrait
+14. iPad (1024 x 768)  -   Landscape & Portrait
+15. iPad Pro (1366 x 1024)  -   Landscape & Portrait
+16. Galaxy S III & S5 (640 x 360) - Landscape & Portrait
+17. Kindle Fire HDX (1280 x 800) - Landscape & Portrait
+18. LG Optimus L70 (384 x 640) - Portrait & Landscape
+19. Nexus <= 10 - Portrait & Landscape
+20. iPad Mini (768 x 1024)  - Portrait & Landscape
+
+Laptops:
+
+1. Laptop with HiDPI Screen
+2. Laptop with HiMPI Screen
+3. Laptop with touch Screen
+
+
+Browsers Compatibility
+1. Chrome (*)
+2. FireFox (#fixing responsive capabilities (fixed))
+3. Opera (*)
+4. IE (Tested on IE11)
+
+
+
