@@ -13,3 +13,4 @@ Any enquiries, support or donation just email<code class="code_color">&nbsp;rhin
 <p align="center">
   <img src="https://webpagetopdf.herokuapp.com/main/static/img/logo_new.svg" width="30%" title="webpagetoPdf">
 </p>
+<p align="right"><b> Made with &#x2764; by Pius Lucky </b></p>
