@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://webpagetopdf.herokuapp.com/main/static/img/logo_new.svg" width="30%" title="webpagetoPdf" alt="Logo">
+  <img src="https://webpagetopdf.herokuapp.com/main/static/img/logo_new.svg" width="20%" title="webpagetoPdf" alt="Logo">
 </div>
 <h1 align="center">
   webpagetopdf.herokuapp.com
