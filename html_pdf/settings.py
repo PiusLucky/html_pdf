@@ -10,7 +10,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'fd(gwuhgyv9q&+st&@amhb@-_kwbii@=*z5lgs+ch62b3$&s7z'
+SECRET_KEY = os.environ['SECRET_KEY']
+
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -137,6 +139,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 
-CONVERT_API_SECRET = "FLJN9jRtuxOohCpV"
-CONVERT_API_KEY = "426071709"
+CONVERT_API_SECRET = os.environ['API_SECRET']
+CONVERT_API_KEY = os.environ['API_KEY']
 
