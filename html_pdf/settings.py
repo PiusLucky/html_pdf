@@ -10,7 +10,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = 't!iwicy8)c^rd*wwww*xhyhw+am1e4v0gx9q!!!u*amtd4%%gr'
 
 
 
@@ -39,8 +39,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # new
 SITE_ID = 1 
 
 
-# DOMAIN_NAME =  "http://localhost:8000"
-DOMAIN_NAME =  "https://webpagetopdf.herokuapp.com"
+
+DOMAIN_NAME =  "https://htmlforpdf.herokuapp.com"
 
 
 
